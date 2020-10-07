@@ -103,8 +103,6 @@ extensions = {
 
 for file in filesToBeMoved:
     fileExt = ext(file)
-    print(fileExt)
-    
     try:
         shutil.move("C:/Users/55839/Desktop/" + file, extensions[fileExt] + "/" + file)
     except KeyError:
