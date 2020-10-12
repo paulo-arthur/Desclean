@@ -3,6 +3,7 @@ import os, shutil
 origin = ['desktop.ini', 'Paulo']
 actual = os.listdir("C:/Users/55839/Desktop")
 filesToBeMoved = []
+
 for file in actual:
     if file not in origin:
         filesToBeMoved.append(file)
